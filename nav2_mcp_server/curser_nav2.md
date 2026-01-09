@@ -203,16 +203,15 @@ A common error occurs when the MCP configuration is missing the required root ob
 {
   "mcpServers": {
     "nav2_mcp_server": {
-      "command": "/home/darshan/.local/bin/uv",
+      "command": "/home/darshan/mcp_course/nav2_mcp_server/.venv/bin/python",
       "args": [
-        "run",
-        "--directory",
-        "/home/darshan/mcp_course/nav2_mcp_server",
+        "-m",
         "nav2_mcp_server"
       ],
       "env": {
         "ROS_DOMAIN_ID": "0",
-        "ROS_LOCALHOST_ONLY": "1"
+        "ROS_LOCALHOST_ONLY": "1",
+        "PYTHONUNBUFFERED": "1"
       }
     }
   }
