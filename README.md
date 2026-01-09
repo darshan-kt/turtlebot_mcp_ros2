@@ -45,7 +45,7 @@ cd ~/turtlebot_ws/src
 Clone this repository into the src folder.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git .
+git clone https://github.com/darshan-kt/turtlebot_mcp_ros2.git
 ```
 
 ### 3. Build the Workspace
@@ -231,8 +231,6 @@ Wait a few seconds; Nav2 takes time to initialize costmaps.
 ```bash
 Darshan K T
 darshankt1806@gmail.com
-https://www.linkedin.com/in/darshan-k-t-70795012b
 ```
-# autonomous_turtlebot
 
 
