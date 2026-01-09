@@ -70,7 +70,7 @@ source install/setup.bash
 Ensure the helper scripts have execution permissions:
 
 ```bash
-chmod +x src/turtlebot_mcp_ros2/bash_scripts/*.sh
+chmod +x src/bash_scripts/*.sh
 ```
 
 ---
@@ -88,7 +88,7 @@ chmod +x src/turtlebot_mcp_ros2/bash_scripts/*.sh
 Run the automated mapping script. This launches Gazebo, SLAM Toolbox, and RViz (pre-configured).
 
 ```bash
-./src/turtlebot_mcp_ros2bash_scripts/mapping.sh
+./src/turtlebot_mcp_ros2/bash_scripts/mapping.sh
 ```
 
 > **Gazebo World View:** The simulation environment will appear.
@@ -100,7 +100,7 @@ Run the automated mapping script. This launches Gazebo, SLAM Toolbox, and RViz (
 Open a new terminal, source the workspace, and run the teleop script.
 
 ```bash
-./src/turtlebot_mcp_ros2bash_scripts/teleop.sh
+./src/turtlebot_mcp_ros2/bash_scripts/teleop.sh
 ```
 
 **Controls:** Use Arrow Keys to move.
@@ -125,8 +125,8 @@ Drive until the map is complete.
 Once satisfied, open a new terminal and save the map to the workspace root:
 
 ```bash
-# Usage: ./src/turtlebot_mcp_ros2bash_scripts/save_map.sh [map_name]
-./src/turtlebot_mcp_ros2bash_scripts/save_map.sh my_lab_map
+# Usage: ./src/turtlebot_mcp_ros2/bash_scripts/save_map.sh [map_name]
+./src/turtlebot_mcp_ros2/bash_scripts/save_map.sh my_lab_map
 ```
 
 **Output:** This creates `my_lab_map.yaml` and `my_lab_map.pgm` in your workspace root.
@@ -146,8 +146,8 @@ Once satisfied, open a new terminal and save the map to the workspace root:
 This starts Gazebo, loads the map server, starts the AMCL node, and opens RViz.
 
 ```bash
-# Usage: ./src/turtlebot_mcp_ros2bash_scripts/amcl.sh [map_name.yaml]
-./src/turtlebot_mcp_ros2bash_scripts/amcl.sh my_lab_map.yaml
+# Usage: ./src/turtlebot_mcp_ros2/bash_scripts/amcl.sh [map_name.yaml]
+./src/turtlebot_mcp_ros2/bash_scripts/amcl.sh my_lab_map.yaml
 ```
 
 #### Initialize Pose (Critical Step)
@@ -184,8 +184,8 @@ Use `teleop.sh` to spin the robot. The particles should tighten around the robot
 This script brings up the full navigation stack (Map Server + AMCL + Planner + Controller).
 
 ```bash
-# Usage: ./src/turtlebot_mcp_ros2bash_scripts/navigation.sh [map_name.yaml]
-./src/turtlebot_mcp_ros2bash_scripts/navigation.sh my_lab_map.yaml
+# Usage: ./src/turtlebot_mcp_ros2/bash_scripts/navigation.sh [map_name.yaml]
+./src/turtlebot_mcp_ros2/bash_scripts/navigation.sh my_lab_map.yaml
 ```
 
 #### Initialize Pose
@@ -211,7 +211,7 @@ If Gazebo hangs, processes freeze, or you need to restart the simulation quickly
 
 ```bash
 # Force kills Gazebo, Nav2, and background ROS processes
-./src/turtlebot_mcp_ros2bash_scripts/kill_process.sh
+./src/turtlebot_mcp_ros2/bash_scripts/kill_process.sh
 ```
 
 ### Common Issues
