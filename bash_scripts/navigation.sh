@@ -29,8 +29,8 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=true map:
 NAV2_PID=$!
 
 # === 5. Launch RViz2 ===
-echo "[INFO] Launching RViz2..."
-ros2 run rviz2 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz &
-RVIZ_PID=$!
+# echo "[INFO] Launching RViz2..."
+# ros2 run rviz2 rviz2 -d /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz &
+# RVIZ_PID=$!
 
 wait $GAZEBO_PID $NAV2_PID $RVIZ_PID

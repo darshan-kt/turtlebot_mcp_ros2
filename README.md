@@ -162,7 +162,7 @@ This starts Gazebo, loads the map server, starts the AMCL node, and opens RViz.
 
 ```bash
 # Usage: ./src/turtlebot_mcp_ros2/bash_scripts/amcl.sh [map_name.yaml]
-./src/turtlebot_mcp_ros2/bash_scripts/amcl.sh my_lab_map.yaml
+./src/turtlebot_mcp_ros2/bash_scripts/amcl.sh $(pwd)/src/my_lab_map.yaml
 ```
 
 #### Initialize Pose (Critical Step)
@@ -199,8 +199,7 @@ Use `teleop.sh` to spin the robot. The particles should tighten around the robot
 This script brings up the full navigation stack (Map Server + AMCL + Planner + Controller).
 
 ```bash
-# Usage: ./src/turtlebot_mcp_ros2/bash_scripts/navigation.sh [map_name.yaml]
-./src/turtlebot_mcp_ros2/bash_scripts/navigation.sh my_lab_map.yaml
+./src/turtlebot_mcp_ros2/bash_scripts/navigation.sh $(pwd)/src/my_lab_map.yaml
 ```
 
 #### Initialize Pose
