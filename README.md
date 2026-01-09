@@ -70,7 +70,7 @@ source install/setup.bash
 Ensure the helper scripts have execution permissions:
 
 ```bash
-chmod +x src/bash_scripts/*.sh
+chmod +x src/turtlebot_mcp_ros2/bash_scripts/*.sh
 ```
 
 ### 5. Add gazebo setup file into .bashrc
