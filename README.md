@@ -73,6 +73,21 @@ Ensure the helper scripts have execution permissions:
 chmod +x src/bash_scripts/*.sh
 ```
 
+### 5. Add gazebo setup file into .bashrc
+
+```bash
+nano ~/.bashrc
+
+## At the bottom of this file add below line
+
+source /usr/share/gazebo/setup.bash
+```
+
+### 6. source .bashrc on terminal or skip this step by opening new terminal
+```bash
+source ~/.bashrc
+```
+
 ---
 
 ## 🚀 Tutorial 1: SLAM (Mapping the World)
