@@ -163,6 +163,8 @@ A common issue: the MCP config file is missing the required root object.
   }
 }
 ```
+Note: Replace /home/darshan with your system /home/USERNAME.
+
 
 ---
 
