@@ -103,7 +103,7 @@ pip install -e .
 ## or With bash file
 ```bash
 cd ~/turtlebot_ws
-./src/turtlebot_mcp_ros2/bash_scripts/ setup_nav2_mcp_server.sh
+./src/turtlebot_mcp_ros2/bash_scripts/setup_nav2_mcp_server.sh
 ```
 
 
@@ -129,6 +129,7 @@ Download Cursor here:
 1. Click **Download for Linux**
 2. Install using your system’s installer
 3. Open Cursor once to confirm it runs
+4. Probably login with your Gmail credentials
 
 ---
 
@@ -170,7 +171,7 @@ A common issue: the MCP config file is missing the required root object.
   }
 }
 ```
-Note: Replace /home/darshan with your system /home/USERNAME.
+
 
 
 ---
