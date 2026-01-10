@@ -100,6 +100,13 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## or With bash file
+```bash
+cd ~/turtlebot_ws
+./src/turtlebot_mcp_ros2/bash_scripts/ setup_nav2_mcp_server.sh
+```
+
+
 ✅ **What this does (for students):**
 
 * Creates an isolated Python environment for running mcp-server(`.venv/`)
