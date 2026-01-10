@@ -275,10 +275,3 @@ Once connected, try prompts like:
 # ✅ You’re Done! 🎉
 
 You can now interact with **Nav2 and ROS 2 using Cursor MCP** — like having an AI assistant inside your robotics system.
-
----
-
-If you want, I can also:
-✅ create a **shorter "Quick Start" section** at the top
-✅ add **screenshots placeholders** for students
-✅ add troubleshooting tips (common ROS_DOMAIN_ID / localhost issues)
