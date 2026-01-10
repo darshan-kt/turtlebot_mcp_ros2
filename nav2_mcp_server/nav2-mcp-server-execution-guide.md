@@ -152,7 +152,7 @@ A common issue: the MCP config file is missing the required root object.
       "args": [
         "bash",
         "-lc",
-        "source /opt/ros/humble/setup.bash && source /home/darshan/turtlebot_ws/install/setup.bash && cd /home/darshan/turtlebot_ws/src/turtlebot_mcp_ros2/nav2_mcp_server && .venv/bin/python -m nav2_mcp_server"
+        "source /opt/ros/humble/setup.bash && source $HOME/turtlebot_ws/install/setup.bash && cd $HOME/turtlebot_ws/src/turtlebot_mcp_ros2/nav2_mcp_server && .venv/bin/python -m nav2_mcp_server"
       ],
       "env": {
         "ROS_DOMAIN_ID": "0",
